@@ -105,6 +105,13 @@ Its function is to read the stored data in memory to generate primitives later (
 processing phase to generate the vertices’ transformation through matrix multiplication.
 
 
+## Geometry processing phase
+
+The CPU requests the images that we see on our computer screen from the GPU. then  geometry processing phase occurs on the GPU and is responsible for the vertex processing of our object. This phase is divided into four subprocesses which are: vertex shading, projection, clipping and screen mapping.
+
+  ![Geometry processing phase](git-images/Geometry_processing_phase.png?raw=true "Geometry processing phase")
+
+
 
 ## What's a Shader?
  
