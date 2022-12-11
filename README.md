@@ -26,7 +26,6 @@ Two main things characterize these points:
 *  They are children of the transform component.
 *  They have a defined position according to the center of the total volume of the object.
 
-
 ![Vertices](git-images/Vertices.png?raw=true "Vertices")
 
  
@@ -93,6 +92,19 @@ So, each rendering pipeline has its characteristics, and depending on the type w
 Please note that this corresponds to the basic model of a render pipeline for real-time rendering engines. Each of the mentioned stages has threads that we will define next:
 
    ![UV](git-images/pipeline_architecture.png?raw=true "Render pipeline architecture")
+
+
+## Application Stage
+The application stage starts at the CPU and is responsible for various operations that occur within a scene, e.g., 
+* Collision detection,
+* Texture animation,
+* Keyboard input,
+* Mouse input, and more.
+
+Its function is to read the stored data in memory to generate primitives later (e.g. triangles,lines, vertices). At the end of the application stage, all this information is sent to the geometry
+processing phase to generate the vertices’ transformation through matrix multiplication.
+
+
 
 ## What's a Shader?
  
