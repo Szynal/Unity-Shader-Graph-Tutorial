@@ -76,7 +76,19 @@ When we export an object from 3D software, it assigns a color to the object (ver
 
 ## Render pipeline architecture
 
+In current versions of Unity, there are three types of rendering pipeline: 
 
+* Built-in RP,
+* Universal RP (called Lightweight in previous versions),
+* High Definition RP.
+
+A pipeline is a series of stages that perform a more significant task operation. So what does rendering pipeline refer to? Let’s think of this concept as the complete process that a polygon object must take (e.g. object with extension .fbx) to be rendered onto our computer screen; it is like an object travelling through the Super Mario pipes until it reaches its final destination.
+
+So, each rendering pipeline has its characteristics, and depending on the type we are using. Unity divides this architecture into four stages: 
+* Application,
+* Geometryprocessing,
+* Rasterization,
+* Pixel processing
 
 
 
