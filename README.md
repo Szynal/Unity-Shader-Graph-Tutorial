@@ -38,6 +38,21 @@ In Maya, we can visualize the normals of an object by selecting the property ver
  
  ![Normals](git-images/Normals.PNG?raw=true "Normals")
  
+## Tangents
+
+According to Unity official documentation: 
+
+Tangents are mostly used in bump-mapped Shaders. A tangent is a unit-length vector that follows Mesh surface along horizontal (U) texture direction. Tangents in Unity are represented as Vector4, with x,y,z components defining the vector, and w used to flip the binormal if needed.
+
+Unity calculates the other surface vector (binormal) by taking a cross product between the normal and the tangent, and multiplying the result by tangent.w. Therefore, w should always be 1 or -1.
+
+ 
+ The letters "U" and "V" denote the axes of the 2D texture because "X", "Y", and "Z" are already used to denote the axes of the 3D object in model space, while "W" (in addition to XYZ) is used in calculating quaternion rotations, a common operation in computer graphics.
+ 
+  ![Tangents](git-images/Tangents.png?raw=true "Tangents")
+  
+  
+ 
 ## What's a Shader?
  
  A Shader is a user-defined program designed to run on some stage of a graphics processor
