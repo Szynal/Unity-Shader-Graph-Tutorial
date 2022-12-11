@@ -90,7 +90,9 @@ So, each rendering pipeline has its characteristics, and depending on the type w
 * Rasterization,
 * Pixel processing
 
+Please note that this corresponds to the basic model of a render pipeline for real-time rendering engines. Each of the mentioned stages has threads that we will define next:
 
+   ![UV](git-images/pipeline_architecture.png?raw=true "Render pipeline architecture")
 
 ## What's a Shader?
  
