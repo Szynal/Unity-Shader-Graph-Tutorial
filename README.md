@@ -59,6 +59,12 @@ Unity calculates the other surface vector (binormal) by taking a cross product b
 The process of positioning vertices over UV coordinates is called “UV mapping”. It is a process by which UV that appears as a flattened, two-dimensional representation of the object’s mesh is created, edited, and organized. Within our shader, we can access this property, either to position a texture on our 3d model or to save information in it.
 
 
+### The area of the UV coordinates is equal to a range between 0.0f and 1.0f, where “zero” means the starting point and “one” is the endpoint.
+
+  ![UV](git-images/UV.png?raw=true "Graphic reference to the UV coordinates in a cartesian plane")
+
+
+
 ## What's a Shader?
  
  A Shader is a user-defined program designed to run on some stage of a graphics processor
