@@ -65,8 +65,19 @@ The process of positioning vertices over UV coordinates is called “UV mapping�
 ### The area of the UV coordinates is equal to a range between 0.0f and 1.0f, where “zero” means the starting point and “one” is the endpoint.
 
   ![UV](git-images/UV.png?raw=true "Graphic reference to the UV coordinates in a cartesian plane")
+  <br />
  Graphic reference to the UV coordinates in a cartesian plane
  
+
+## Vertex color
+
+When we export an object from 3D software, it assigns a color to the object (vertex color) to be affected, either by lighting or replicating another color. 
+
+
+## Render pipeline architecture
+
+
+
 
 
 ## What's a Shader?
