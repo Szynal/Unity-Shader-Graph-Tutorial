@@ -36,7 +36,7 @@ Two main things characterize these points:
 
 In Maya, we can visualize the normals of an object by selecting the property vertex normals. It allows us to see where a vertex points in space and determines the hardness level between the different faces of an object.
  
- ![Normals](git-images/Normals.png?raw=true "Normals")
+ ![Normals](git-images/Normals.PNG?raw=true "Normals")
  
 ## What's a Shader?
  
