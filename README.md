@@ -51,8 +51,14 @@ Unity calculates the other surface vector (binormal) by taking a cross product b
  
   ![Tangents](git-images/Tangents.png?raw=true "Tangents")
   
-  
+ ## UV coordinates 
  
+ 
+ We have all changed the skin of our favorite character for a better one. UV coordinates are directly related to this concept, since they allow us to position a two-dimensional texture on the surface of a three-dimensional object. These coordinates act as reference points, which control which texels in the texture map correspond to each vertex in the mesh.
+
+The process of positioning vertices over UV coordinates is called “UV mapping”. It is a process by which UV that appears as a flattened, two-dimensional representation of the object’s mesh is created, edited, and organized. Within our shader, we can access this property, either to position a texture on our 3d model or to save information in it.
+
+
 ## What's a Shader?
  
  A Shader is a user-defined program designed to run on some stage of a graphics processor
