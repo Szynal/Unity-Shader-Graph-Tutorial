@@ -27,11 +27,16 @@ Two main things characterize these points:
 *  They have a defined position according to the center of the total volume of the object.
 
 
-![Vertices](git-images/Vertices.png?raw=true "Preview Image")
+![Vertices](git-images/Vertices.png?raw=true "Vertices")
 
  
+## Normals
+
+ Let’s imagine that we have a blank sheet of paper, and we ask a friend to draw on the front face of the sheet. How could we determine which is the front face of a blank sheet if both sides are equal? This is why normals exist. A normal corresponds to a perpendicular vector on the surface of a polygon which is used to determine the direction or orientation of a face or vertex.
+
+In Maya, we can visualize the normals of an object by selecting the property vertex normals. It allows us to see where a vertex points in space and determines the hardness level between the different faces of an object.
  
- 
+ ![Normals](git-images/Normals.png?raw=true "Normals")
  
 ## What's a Shader?
  
