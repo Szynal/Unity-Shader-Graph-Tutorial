@@ -26,7 +26,10 @@ Two main things characterize these points:
 *  They are children of the transform component.
 *  They have a defined position according to the center of the total volume of the object.
 
-
+![Vertices](gitimage/.png?raw=true "Preview welcome screen")
+ 
+ 
+ 
  
 ## What's a Shader?
  
