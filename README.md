@@ -107,11 +107,24 @@ processing phase to generate the vertices’ transformation through matrix multi
 
 ## Geometry processing phase
 
+
 The CPU requests the images that we see on our computer screen from the GPU. then  geometry processing phase occurs on the GPU and is responsible for the vertex processing of our object. This phase is divided into four subprocesses which are: vertex shading, projection, clipping and screen mapping.
 
   ![Geometry processing phase](git-images/Geometry_processing_phase.png?raw=true "Geometry processing phase")
 
 
+When the primitives have already been assembled in the application stage, the vertex shading, more commonly known as the vertex shader stage, handles two main tasks:
+
+1. It calculates the position of the vertices of the object.
+2. Transforms its position to different space coordinates so that they can be projected ionto the computer screen.
+
+Also, within this subprocess, we can select the properties that we want to pass on to the following stages. It means that within the vertex shader stage, we can include normals, tangents, UV coordinates etc.
+
+  <br />
+Projection and clipping occur as part of the process, which varies according to the properties of our camera in the scene. It is worth mentioning that the whole rendering process occurs only for those elements that are within the camera frustum, also known as the view-space
+
+
+   ![Geometry processing phase](git-images/Geometry_processing_phase_02.png?raw=true "Geometry processing phase")
 
 ## What's a Shader?
  
