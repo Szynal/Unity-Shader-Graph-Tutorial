@@ -126,6 +126,16 @@ Projection and clipping occur as part of the process, which varies according to 
 
    ![Geometry processing phase](git-images/Geometry_processing_phase_02.png?raw=true "Geometry processing phase")
 
+## Pixel processing stage
+
+Using the interpolated values from the previous processes, this last stage starts when all the pixels are ready to be projected onto the screen. At this point, the fragment shader stage, also known as a pixel shader stage, begins and is responsible for the visibility of each pixel.
+Basically what it does is compute the final color of a pixel and then send it to the color buffer.
+
+
+   ![Pixel processing stage](git-images/pixel_processing_stage.png?raw=true "Pixel processing stage")
+   
+
+
 ## What's a Shader?
  
  A Shader is a user-defined program designed to run on some stage of a graphics processor
