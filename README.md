@@ -158,6 +158,10 @@ The interaction between these two elements is called the lighting model.
 The basic lighting model corresponds to the sum of three different properties, which are
 ambient color, diffuse reflection and specular reflection.
 
+## Forward rendering
+
+Forward is the default rendering path and supports all typical features of a material (e.g. normal maps, pixel lighting, shadows, etc.). This rendering path has two different code written passes that we can use in our shader, the first, *base pass* and the *second additional pass*. 
+
 
 ## What's a Shader?
  
