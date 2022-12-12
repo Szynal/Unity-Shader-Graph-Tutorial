@@ -141,6 +141,14 @@ In Unity, the default rendering path corresponds to   `**forward rendering;** ` 
 
    ![Types of render pipeline](git-images/rp.png?raw=true "Types of render pipeline")
 
+
+Please note that in Universal RP, we can only use forward as a rendering path, whereas High Definition RP allows illuminated material rendering using either forward or deferred shading.
+
+   ![Types of render pipeline](git-images/types_of_render_pipeline.png?raw=true "Types of render pipeline")
+
+
+
+
 ## What's a Shader?
  
  A Shader is a user-defined program designed to run on some stage of a graphics processor
