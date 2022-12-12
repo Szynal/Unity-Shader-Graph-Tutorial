@@ -183,6 +183,27 @@ There are some ways to optimize this process, which we will talk about later ^^ 
 
    ![Forward Rendering](git-images/forward_rendering.png?raw=true "Forward Rendering")
 
+## Deferred shading
+
+This rendering path ensures that there is only one lighting pass computing each light source in our scene, and only in those pixels that are affected by them, all this through the separation of the geometry and lighting. This figures as an advantage since we could generate a significant amount of light that influences different objects, thereby improving the fidelity of the final render but nominally increasing the per-pixel calculation on the GPU.
+
+While Deferred Shading is superior to Forward when it comes to multi-light source computing, it brings with it some hardware compatibility restrictions and issues.
+
+
+## Matrices and coordinates systems
+
+In Unity the matrices represent a spatial transformation and among them, we can find: 
+
+• UNITY_MATRIX_MVP.
+• UNITY_MATRIX_MV.
+• UNITY_MATRIX_V.
+• UNITY_MATRIX_P.
+• UNITY_MATRIX_VP.
+• UNITY_MATRIX_T_MV.
+• UNITY_MATRIX_IT_MV.
+• unity_ObjectToWorld.
+• unity_WorldToObject. 
+
 ## What's a Shader?
  
  A Shader is a user-defined program designed to run on some stage of a graphics processor
