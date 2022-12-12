@@ -163,6 +163,26 @@ ambient color, diffuse reflection and specular reflection.
 Forward is the default rendering path and supports all typical features of a material (e.g. normal maps, pixel lighting, shadows, etc.). This rendering path has two different code written passes that we can use in our shader, the first, **base pass** and the **second additional pass**. 
 
 
+As its name says, the additional pass can process “additional lights” per-pixel or also shadows that affect the object, what does this mean? If we have two lights in the scene, our object will be influenced only by one of them, however, if we have defined an additional pass for this configuration, then it will be influenced by both. 
+
+
+One point that we must take into consideration is that each illuminated pass will generate aseparate **draw call**. A draw call is a call graphic that is made in the GPU every time we want to draw an element on the screen of our computer. 
+
+### Draw call
+
+These calls are processes that requirea large amount of computation, so they need to be kept to a minimum possible, even more so if we are working on projects for mobile devices.
+
+To understand this concept, we are going to suppose that we have four Spheres and one directional light in our scene. Each Sphere, by its nature, generates a call to the GPU, this means that each of them will generate an independent draw call by default.
+
+Likewise, the directional light influences all the Spheres that are found in the scene, therefore, it will generate an additional draw call for each Sphere, this is mainly because a second pass has been included in the shader to calculate the shadow projection, therefore, four Spheres, plus one-directional light will generate eight draw calls in total.
+
+
+Having determined the base pass, if we add another pass in our shader, then we are going to add a new draw call for each object, and consequently, the graphic load will increase significantly.
+
+There are some ways to optimize this process, which we will talk about later ^^  For now, we will continue the rendering path concept.
+
+   ![Forward Rendering](git-images/forward_rendering.png?raw=true "Forward Rendering")
+
 ## What's a Shader?
  
  A Shader is a user-defined program designed to run on some stage of a graphics processor
