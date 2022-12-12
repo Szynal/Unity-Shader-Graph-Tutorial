@@ -137,7 +137,7 @@ Basically what it does is compute the final color of a pixel and then send it to
 ## Types of render pipeline
 
 
-In Unity, the default rendering path corresponds to **forward rendering;**  this is the initial path for the three types of pipeline render that are included in Unity. This is because it has greater graphics card compatibility and a lighting calculation limit, making it a more optimized process
+In Unity, the default rendering path corresponds to   `**forward rendering;** `  this is the initial path for the three types of pipeline render that are included in Unity. This is because it has greater graphics card compatibility and a lighting calculation limit, making it a more optimized process
 
    ![Types of render pipeline](git-images/rp.png?raw=true "Types of render pipeline")
 
