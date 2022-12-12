@@ -147,6 +147,20 @@ Please note that in Universal RP, we can only use forward as a rendering path, w
    ![Types of render pipeline](git-images/types_of_render_pipeline.png?raw=true "Types of render pipeline")
 
 
+To understand this concept, we are going to suppose that we have an “object” and a “direct
+light” in a scene. The interaction between the light and the object is based on two points,
+they are.
+
+1. Lighting characteristics.
+2. Material characteristics.
+
+The interaction between these two elements is called the lighting model.
+The basic lighting model corresponds to the sum of three different properties, which are
+ambient color, diffuse reflection and specular reflection.
+
+## Forward rendering
+
+Forward is the default rendering path and supports all typical features of a material (e.g. normal maps, pixel lighting, shadows, etc.). This rendering path has two different code written passes that we can use in our shader, the first, **base pass** and the **second additional pass**. 
 
 
 ## What's a Shader?
