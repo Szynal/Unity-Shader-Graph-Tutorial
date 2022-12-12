@@ -194,15 +194,15 @@ While Deferred Shading is superior to Forward when it comes to multi-light sourc
 
 In Unity the matrices represent a spatial transformation and among them, we can find: 
 
-• UNITY_MATRIX_MVP.
-• UNITY_MATRIX_MV.
-• UNITY_MATRIX_V.
-• UNITY_MATRIX_P.
-• UNITY_MATRIX_VP.
-• UNITY_MATRIX_T_MV.
-• UNITY_MATRIX_IT_MV.
-• unity_ObjectToWorld.
-• unity_WorldToObject. 
+* UNITY_MATRIX_MVP.
+* UNITY_MATRIX_MV.
+* UNITY_MATRIX_V.
+* UNITY_MATRIX_P.
+* UNITY_MATRIX_VP.
+* UNITY_MATRIX_T_MV.
+* UNITY_MATRIX_IT_MV.
+* unity_ObjectToWorld.
+* unity_WorldToObject. 
 
 ## What's a Shader?
  
