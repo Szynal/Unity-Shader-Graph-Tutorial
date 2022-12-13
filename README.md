@@ -204,6 +204,18 @@ In Unity the matrices represent a spatial transformation and among them, we can 
 * unity_ObjectToWorld.
 * unity_WorldToObject. 
 
+   ![Matrices](git-images/unity_matrix.png?raw=true "Matrices")
+
+The final value of each vertex in the object space is multiplied by a matrix known as the model matrix (UNITY_MATRIX_M), which allows us to modify the transformation, rotation and scale values of the vertices of an object. Every time that we rotate, change position or
+scale our object then the model matrix is updated, but how does this process happen?
+
+To understand this we are going to suppose that we have a Cube in our scene and we want to transform its values using a model matrix. We will start by taking a vertex of our Cube that is at position XYZW [0.5f, -0.5f, -0.5f, 1] relative to its center.
+
+
+It should be mentioned that channel “W” in the previous example corresponds to a “homogeneous” system of coordinates that allow us to handle vectors and points uniformly. In matrix transformations, the W coordinate can have a value of “zero or one”. When W equals one (e.g. X, Y, Z, 1), it refers to a point in space, whereas, when it equals zero (e.g. X, Y, Z, 0), it refers to a direction in space. 
+
+
+
 ## What's a Shader?
  
  A Shader is a user-defined program designed to run on some stage of a graphics processor
