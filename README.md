@@ -218,7 +218,24 @@ It should be mentioned that channel “W” in the previous example corresponds 
 
 ## What's a Shader?
  
- A Shader is a user-defined program designed to run on some stage of a graphics processor
+ A shader is a small program with a “.shader” extension (e.g. color.shader), which can be used to generate interesting effects in our projects. Inside, it has mathematical calculations and lists of instructions (commands) that allow color processing for each pixel within the area covering an object on our computer screen.
+ 
+ This program allows us to draw elements (using coordinate systems) based on the properties of a polygonal object. The shaders are executed by the GPU since they have a parallel architecture that consists of thousands of small, efficient cores designed to solve tasks simultaneously, while the CPU has been designed for sequential serial processing. 
+ 
+ 
+ Note that Unity has three types of files associated with shaders. 
+ 
+* Firstly, we have programs with the “.shader” extension that are capable of compiling in the different types of render
+pipelines
+* Secondly, we have programs with the “.shadergraph” extension that can only compile in either Universal RP or High Definition RP. In addition, we have files with the “.hlsl” extension that allow us to create customized functions; generally used within a node type called Custom Function, found in Shader Graph.
+* There is also another type of program with the extension “.cginc” which we will review in detail later on. For now, we will limit ourselves to making the following association: “.cginc” is linked to “.shader” CGPROGRAM, and “.hlsl” is linked to “.shadergraph” HLSLPROGRAM. Knowing this analogy is fundamental because each extension fulfills a different function and is used in specific contexts.
+
+
+   ![Shader](git-images/shader.png?raw=true "Shader")
+
+
+
+
  
 # Lighting, shadows, and surfaces
 
